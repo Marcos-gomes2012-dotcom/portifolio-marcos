@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Portfólio Marcos</title>
+</head>
+
+<body>
+    <div class="particulas"></div>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home" class="nav-link">Início</a></li>
+            <li><a href="#about" class="nav-link">Sobre</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#contact" class="nav-link">Contato</a></li>
+        </ul>
+    </nav>
+    <>
+        <main id="home" class="cabecalho" class="profile-picture">
+            <img src="./assets/marcosp.jpg" alt="Foto de perfil de Marcos" class="foto-perfil">
+            <h1 class="cabecalho-titulo">Marcos Gomes</h1>
+            <p class="cabeclho-sub-titulo">Desenvolvedor front End</p>
+        </main>
+        <section id="about" class="sobre">
+            <h2 class="sobre-titulo">Sobre mim</h2>
+            <div class="sobre-caixa">
+                <p class="sobre-paragrafo">Sou um desenvolvedor web com experiência em HTML, CSS e JavaScript.
+                    Tenho paixão por criar sites e aplicativos interativos.</p>
+            </div>
+        </section>
+        <section id="projects" class="projetos">
+            <h2>Meus Projetos</h2>
+            <div class="projetos-caixa">
+
+                <div class="projetos-paragrafo">
+                    <img src="./assets/nova.jpg" alt="Imagem de projetos">
+                    <h3 class="projetos-titulo1">Site de Portfólio </h3>
+                </div>
+
+
+                <div class="projetos-paragrafo">
+                    <img src="./assets/app.tarefa.jpg" alt="Imagem de projetos">
+                    <h3 class="projetos-titulo2">Aplicativo de Tarefas</h3>
+                </div>
+
+                <div class="projetos-paragrafo">
+
+                    <a href="https://www.linkedin.com/in/marcos-gomes-40b00282/" target="_blank" class="projetos-link">
+
+                        <img src="./assets/linkedin.png" alt="Imagem de projetos">
+                        <h3 class="projetos-titulo3">LinkedIn</h3>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+        <section id="contact" class="contato">
+            <h2 class="contato-titulo">Entre em Contato</h2>
+            <form class="formulario-contato" id="formulario" onsubmit="enviarWhats(event)">
+                <div class="nome-form">
+                    <label for="name">Nome:</label>
+
+                </div>
+                <div>
+                    <div class="grupo-form">
+                        <input type="text" id="name" name="name" required class="campo-form">
+                    </div>
+                </div>
+                <div class="grupo-form">
+                    <label for="message">Mensagem:</label>
+
+                    <textarea id="message" name="message" rows="6" required class="campo-form"></textarea>
+                </div>
+                <button type="submit" class="botao-form">Enviar whatsapp</button>
+            </form>
+        </section>
+        </main>
+        <script>
+            function enviarWhats(event) {
+                event.preventDefault();
+
+
+                const nome = document.getElementById('name').value;
+                const message = document.getElementById('message').value;
+                const telefone = '+5519989649009';
+
+                const texto = `Olá, me chamo ${nome}. ${message}`;
+                const msgFormatada = encodeURIComponent(texto);
+                const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+                console.log(url)
+                window.open(url, '_blank');
+            }
+            // Substitua pelo seu número de telefone com código do país 
+
+
+        </script>
+</body>
+
+</html>
