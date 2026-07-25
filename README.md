@@ -1,16 +1,15 @@
-# Portfólio - Marcos Gomes | Front-End Developer
+# Portfólio - Marcos Gomes
 
-Meu portfólio pessoal desenvolvido com HTML, CSS e JavaScript.
+Meu portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e contato.
 
-🔗 **Live:** https://portifolio-marcos-liard.vercel.app
-💻 **Stack:** HTML5, CSS3, JavaScript
-🚀 **Deploy:** Vercel + GitHub (CI/CD automático)
-🔒 **Segurança:** SSL, CDN Global, Firewall
+### 🔥 Demo
+👉 https://marcos-gomes2012-dotcom.github.io/portifolio-marcos/
 
-### Sobre
-Sou Desenvolvedor Front-End focado em criar interfaces rápidas, responsivas e seguras. Este projeto é meu cartão de visitas.
+### 🛠️ Feito com
+- HTML5
+- CSS3
+- Responsivo (Mobile First)
 
-### Como rodar local
+### 📂 Como rodar
 ```bash
-git clone https://github.com/Marcos-gomes2012-dotcoms/portifolio-marcos.git
-# abra o index.html
+git clone https://github.com/Marcos-gomes2012-dotcom/portifolio-marcos.git
