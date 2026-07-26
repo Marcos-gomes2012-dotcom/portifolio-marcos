@@ -12,4 +12,4 @@ Meu portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e
 
 ### 📂 Como rodar
 ```bash
-https://portifolio-marcos-liard.vercel.app/#home
+git clone https://github.com/Marcos-gomes2012-dotcom/portifolio-marcos.git
